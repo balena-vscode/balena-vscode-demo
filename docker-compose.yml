@@ -5,3 +5,7 @@ services:
     build: .
     ports:
       - "80:80"
+  balena-hello-world-never-run:
+    build: .
+    command: ["sleep 1"]
+    restart: never
